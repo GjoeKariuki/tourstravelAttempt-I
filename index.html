@@ -7,14 +7,15 @@
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="css/css.js">
+    <link rel="stylesheet" href="style.css">
     <!-- custom js -->
-    <script src="js/script.js" defer></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
     <!-- header starts -->
     <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
         <a href="#" class="logo"><i class="fas fa-paper-plane"></i>travel</a>
         <nav class="navbar">
             <a href="#home">home</a>
@@ -27,5 +28,54 @@
         <a href="#book-form" class="btn">book now</a>
     </header>
     <!-- header ends -->
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <span>follow us</span>
+            <h3>to the unknown</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque.</p>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </section>
+    <!-- home section ends -->
+    <!-- booking form section starts -->
+    <section class="book-form" id="book-form">
+        <form action="">
+            <div class="inputBox">
+                <span>where to?</span>
+                <input type="text" placeholder="place-name" value="">
+            </div>
+            <div class="inputBox">
+                <span>when?</span>
+                <input type="date" value="">
+            </div>
+            <div class="inputBox">
+                <span>how many?</span>
+                <input type="number" placeholder="number of travelers" value="">
+            </div>
+            <input type="submit" value="find now" class="btn">
+        </form>
+    </section>
+    <!-- booking form section ends -->
+    <!-- about section starts -->
+    <section class="about" id="about">
+         <div class="video-container">
+            <picture><source srcSet="MM10132_230906_07295_3x2.avif" type="image/avif" /></picture>
+            <embed src="MM10132_230906_07295_3x2.avif" width="320" height="240">
+                <object data="MM10132_230906_07295_3x2.avif" width="320" height="240">
+                   <param name="src" value="MM10132_230906_07295_3x2.avif">
+                   <noembed>
+                      <p>This browser does not support embedded AVI files.</p>
+                   </noembed>
+                </object>
+            <video src="MM10132_230906_07295_3x2.avif" muted autoplay loop class="video"></video>
+            <div class="controls">
+                <span class="control-btn" data-src="MM10132_230906_07295_3x2.avif"></span>
+                <span class="control-btn" data-src="MM10132_230901_01317_4x3.avif"></span>
+                <span class="control-btn" data-src="MM10132_230902_02061_4x3.avif"></span>
+            </div>
+         </div>
+    </section>
+    <!-- about section ends -->
 </body>
 </html>
